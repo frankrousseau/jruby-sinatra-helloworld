@@ -3,7 +3,7 @@
 
 # Warbler web application assembly configuration file
 Warbler::Config.new do |config|
-  config.dirs = %w(app config tmp public views)
+  config.dirs = %w(config tmp public views)
   config.includes = FileList["hello.rb"]
   config.gems += ["sinatra", "haml"]
   config.gem_dependencies = true
