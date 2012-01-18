@@ -1,15 +1,27 @@
-### Installation
+Installation
+============
 
-gem install sinatra
+   apt-get install ruby jruby gem
 
-### Usage
+   gem install sinatra warbler rack
 
-cd *app_folder*
-rackup 
 
-or generate war:
 
-cd *app_folder*
-warble
+Usage
+=====
+
+**Ruby way**
+
+    cd *app_folder*
+
+    rackup 
+
+**JRuby way**
+
+    cd *app_folder*
+
+    warble
 
 then use java application server :
+
+    java -jar container/winstone-0.9.10.jar -warfile=jruby-sinatra-helloworld
